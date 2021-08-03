@@ -1,0 +1,41 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 74px;
+}
+
+.header-logo {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.header-authorized {
+  &__username {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+  }
+
+  .header-authorized__button {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.header-authorized__button,
+.header-unauthorized__button {
+  width: 118px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #000;
+  border-radius: 8px;
+  color: #fff;
+}

@@ -1,0 +1,28 @@
+.product-card {
+  &__image {
+    margin-bottom: 12px;
+    aspect-ratio: 1/1;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #212121;
+  }
+
+  &__description {
+    max-width: 250px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #5A5A5A;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

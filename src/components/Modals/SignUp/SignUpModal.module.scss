@@ -1,0 +1,126 @@
+.sign-up-modal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sign-up-modal_overlay {
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+}
+
+.sign-in-modal_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+
+.sign-up {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  background-color: rgba($color: #fff, $alpha: 1.0);
+  border-radius: 8px; 
+
+  &-content {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: calc(100vh - 140px);
+  }
+
+  &__logo {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #5A5A5A;
+
+    .terms-and-policy {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  &-form {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    width: 100%;
+
+    .form-input {
+      padding-bottom: 16px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 22px;
+      color: #000;
+      border-bottom: 1px solid #5A5A5A;
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 22px;
+        color: #5A5A5A;
+      }
+    }
+
+    .form-submit_button {
+      width: 100%;
+      height: 56px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      background-color: #000;
+      border-radius: 8px;
+      color: #fff;
+    }
+
+    .form-error {
+      display: block;
+      color: red;
+      text-align: center;
+    }
+  }
+
+  &-has_account {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+
+    .has_account-label {
+      margin-right: 3px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #5A5A5A;
+    }
+
+    .has_account-button {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+}
